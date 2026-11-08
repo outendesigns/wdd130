@@ -1,3 +1,10 @@
+/* This is a CSS Comment */
+:root {
+    --primary-color: white;
+    --secondary-color: darkblue;
+    --highlight-color: steelblue;
+}
+
 main {
     max-width: 840px;
 }
@@ -5,24 +12,24 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--highlight-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--secondary-color);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--primary-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--secondary-color);
 }
 
 img {
