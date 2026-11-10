@@ -36,6 +36,11 @@ h2 {
     color: var(--primary-color);
 }
 
+h3 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
 h1 {
     position: absolute;
     top: 20px;
@@ -66,11 +71,36 @@ article {
     height: auto;
 }
 
+.hero article {
+    position: absolute;
+    bottom: 25px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
 .hero article img {
     float: right;
     width: 125px;
 }
 
+footer {
+    text-align: center;
+}
+
+.socialmedia {
+    text-align: center;
+}
+
 .socialmedia a {
     text-decoration: none;
+}
+
+.socialmedia a img {
+    width: 55px;
+    margin-left: 25px;
 }
