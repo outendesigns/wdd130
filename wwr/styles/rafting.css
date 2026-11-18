@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
+    --primary-color: #E39317;
+    --secondary-color: #1C6DB5;
+    --accent1-color: #37A6D9;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -27,7 +27,32 @@ footer {
 
 header {
     background-color: var(--primary-color);
-    color: var(--accent2-color)
+    color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+header ul li {
+    align-content: center;
+    width: 25%;
+    text-align: center;
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--secondary-color);
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid black;
 }
 
 h1,
@@ -54,7 +79,6 @@ h1 {
 
 nav,
 p,
-section,
 article {
     margin: 16px;
     padding: 8px;
@@ -103,4 +127,22 @@ footer {
 .socialmedia a img {
     width: 55px;
     margin-left: 25px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.history-section h2 {
+    text-align: center;
+}
+
+.history-section img {
+    width: 200px;
+}
+
+.history-section p {
+    margin: 0 15px;
+    padding: 0;
 }
