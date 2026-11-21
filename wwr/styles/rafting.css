@@ -117,11 +117,19 @@ article {
 }
 
 footer {
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin-top: 25px;
 }
 
-.socialmedia {
-    text-align: center;
+footer p {
+    grid-column: 2;
+    margin: 0;
+}
+
+footer .socialmedia {
+    justify-self: end;
 }
 
 .socialmedia a {
@@ -129,8 +137,8 @@ footer {
 }
 
 .socialmedia a img {
-    width: 55px;
-    margin-left: 25px;
+    width: 50px;
+    margin-left: 5px;
 }
 
 .flex-container {
